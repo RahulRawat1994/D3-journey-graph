@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML, CSS and JavaScript demo</title>
+</head>
+<body>
+<!-- Start your code here -->
+<div style="height:100vh; width: 100vw;">
+  <div style="height:100vh; width:100%;position: relative;">
+    <svg  id="svg"  width="100%"  xmlns="http://www.w3.org/2000/svg" height="100%" >
+  
+    </svg>
+
+  <div class="svg-sidebar">
+    <div class="workflow_menu_block mpskyBlue">
+      
+      <label>Triggers</label>
+      <ul>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/new_subscription.png" data-workflow-element="new_subscription" >New Subscription</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/campaign_opened.png" data-workflow-element="campaign_opened" >Campaign Opened</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/link_clicked.png" data-workflow-element="link_clicked" >Link Clicked</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/product_purchased.png" data-workflow-element="product_purchased" >Product Purchased</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/total_revenue.png" data-workflow-element="total_revenue" >Total Revenue</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/form_event.png" data-workflow-element="form_event" >Form Event</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/api_event.png" data-workflow-element="api_event" >Api Event</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/segment_event.png" data-workflow-element="segment_event" >Segment Event</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/field_updated.png" data-workflow-element="contact_field_updated" >Contact Field Updated</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/field_updated.png" data-workflow-element="table_field_updated" >Table Field Updated</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/subscription_changed.png" data-workflow-element="subscription_changed" >Subscription Changed</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/subscription_changed.png" data-workflow-element="tag_event" >Tag Event</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/campaign_opened.png" data-workflow-element="web_page_event" >Web Page Event</a></li>
+          <li><a href="#" data-type="trigger" data-image="./assets/imgs/abandoned_trigger.png" data-workflow-element="abandoned_trigger" >Abandoned Cart</a></li>
+      </ul>
+    </div>
+    <div class="workflow_menu_block mpGreen">
+      <label>Actions</label>
+      <ul>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/send_email.png" data-workflow-element="send_email" class="peter-river-flat-button">Send Email</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/send_sms.png"  data-workflow-element="send_message" class="peter-river-flat-button">Send Sms</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/push.png" data-workflow-element="send_push_message" class="peter-river-flat-button">Send Push Message</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/http_post.png" data-workflow-element="http_post" class="peter-river-flat-button">HTTP Post</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/trigger_workflow.png" data-workflow-element="trigger_workflow" class="peter-river-flat-button">Trigger Journey</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/facebook_audience.png" data-workflow-element="facebook_custom_audience" class="peter-river-flat-button">Send to Facebook</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/end_workflow.png" data-workflow-element="end_workflow" class="peter-river-flat-button">End Journey</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/change_contact_field.png" data-workflow-element="change_contact_field" class="peter-river-flat-button">Change Contact Field</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/change_contact_field.png" data-workflow-element="change_table_field" class="peter-river-flat-button">Change Table Field</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/change_subscription.png" data-workflow-element="change_subscription" class="peter-river-flat-button">Change Subscription</a></li>
+        <li><a href="#"  data-type="action"  data-image="./assets/imgs/change_subscription.png" data-workflow-element="change_tag" class="peter-river-flat-button">Change Tags</a></li>
+      </ul>
+    </div>
+    <div class="workflow_menu_block mpBlue">
+      <label>Filters</label>
+      <ul>
+        <li><a href="#" data-type="filter" data-image="./assets/imgs/yes_no.png" data-workflow-element="yes_no" >Yes/No</a></li>
+        <li><a href="#" data-type="filter" data-image="./assets/imgs/case.png" data-workflow-element="case" >Case</a></li>
+        <li><a href="#" data-type="filter" data-image="./assets/imgs/percent_split.png" data-workflow-element="percent_split" >% Split</a></li>
+        <li><a href="#" data-type="filter" data-image="./assets/imgs/ab_split.png" data-workflow-element="ab_split" >A/B Split</a></li>
+      </ul>
+    </div>
+    <div class="workflow_menu_block mpPink">
+      <label>Delay</label>
+      <ul>
+        <li><a href="#" data-type="delay" data-image="./assets/imgs/delay.png" data-workflow-element="delay" >Delay</a></li>
+        <li><a href="#" data-type="delay" data-image="./assets/imgs/delay_until.png" data-workflow-element="delay_until" >Delay Until?</a></li>
+      </ul>
+    </div>
+    <div class="workflow_menu_block mpRed">
+      <label>End</label>
+      <ul>
+        <li><a href="#" data-type="end" data-image="./assets/imgs/end.png" data-workflow-element="workflow_end" >End</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- End your code here -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<!-- <script src="./test.js"></script> -->
+<script src="./dragLine.js"  ></script>
+<script src="./path.js"  ></script>
+<script src="./edge.js"  ></script>
+<script src="./index.js"  ></script>
+
+<style>
+    #svg{
+      background-image:linear-gradient(to top, rgba(255,255,255,0.05) 98%, rgba(0,0,0,0.1) 1%, rgba(255,255,255,0.05)),
+      linear-gradient(to left, rgba(255,255,255,0.05) 98%, rgba(0,0,0,0.1) 1%, rgba(255,255,255,0.05));
+      background-size:30px 30px;
+      background-color:#eceeef;
+      overflow:hidden
+    }
+    .svg-sidebar{
+      position:fixed;
+      height: 98%;
+      left:0px;
+      top:0px;
+      width: 12rem;
+      overflow: auto;
+      overflow-y: scroll;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      margin:20px 0px 0px 20px;
+      padding: 8px;
+    }
+    .workflow_menu_block label {
+        background-color: #FFFFFF;
+        width: 100%;
+        display: block;
+        font-family: sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-align: center;
+        font-size: normal;
+        padding: 4px 0px;
+        margin: 0px;
+        line-height: 16px;
+        color: rgba(0,0,0,0.6);
+    }
+    .workflow_menu_block ul li a {
+        padding: 12px 0px;
+        font-family: sans-serif;
+        
+        font-size: 12px;
+        cursor: pointer;
+        letter-spacing: 0.2px;
+        display: block;
+        height: auto;
+        color:#fff;
+        text-align: center;
+        text-decoration: none;
+        margin:6px 10px;
+        border-radius: 4px;
+    }
+    .workflow_menu_block ul{
+      padding:0px;
+    }
+    .workflow_menu_block ul li {
+      list-style: none;
+      
+    }
+    .mpskyBlue.workflow_menu_block ul li a{
+      background-color: #03B6FC;
+    }
+    .mpGreen.workflow_menu_block ul li a{
+      background:#29993E
+    }
+    .mpRed.workflow_menu_block ul li a{
+      background:#C22337
+    }
+    .mpBlue.workflow_menu_block ul li a{
+      background: #2127A5
+    }
+    .mpPink.workflow_menu_block ul li a{
+      background-color: #EA1397;
+    }
+
+
+path.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  cursor: default;
+}
+
+
+path.link.selected {
+  stroke-dasharray: 10,2;
+}
+
+path.link.dragline {
+  pointer-events: none;
+}
+
+path.link.hidden {
+  stroke-width: 0;
+}
+.hidden{
+  display: none;
+}
+.grab:hover{
+  cursor: grab;
+}
+.pointer:hover{
+  cursor: pointer;
+}
+
+</style>
+</html>
